@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friendship Diagnostic Tool v8.3</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #eceff1; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #eceff1; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }
         .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 380px; text-align: center; border-top: 5px solid #607d8b; transition: all 0.5s ease; }
         h2 { color: #455a64; font-size: 1.4rem; }
         .hidden { display: none; }
@@ -36,6 +36,21 @@
             border-radius: 8px;
             display: none; /* Ẩn lúc đầu */
             animation: fadeIn 2s forwards;
+        }
+
+        /* CSS cho khung tâm thư */
+        #secret-message {
+            display: none; /* Ẩn lúc đầu */
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #607d8b;
+            border-radius: 4px;
+            text-align: left;
+            font-size: 0.95rem;
+            color: #455a64;
+            line-height: 1.6;
+            animation: fadeIn 1.5s forwards;
         }
 
         @keyframes fadeIn {
@@ -78,6 +93,27 @@
         <div id="terminal-content"></div>
         <img id="flower-img" src="hoa.jpg" alt="Bó hoa tặng bạn">
     </div>
+
+    <div id="secret-message">
+       Ngày ấy chia tay, anh đau lắm, cảm giác khó chịu rất nhiều. Trước đây anh khinh thường thứ tình cảm này, trách rằng sao họ lại rơi nước mắt vì một người không phải người thân mình.
+        Giờ anh hiểu rồi, đến khi nước mắt anh rơi anh đã hiểu hết. Hiểu rằng có lẽ anh đã yêu em rồi.
+        Thật ra trước đây khi em hỏi anh thích em chỗ nào, anh nói rằng thích vì nụ cười, nó đúng đó nhưng không đủ. Thực ra anh không biết nữa, không biết sao lại dần dần rơi vào lưới tình với em nữa. Chắc do anh đã cô đơn quá lâu nên mừng rỡ khi có người bước đến nhỉ.
+        Cũng không phải, cảm giác đó rất khác, trước giờ anh chưa bao giờ coi cô đơn là nỗi buồn của mình, anh có chính thân tâm anh làm bạn mà. Nhưng từ khi em bước vào rồi anh không biết gì nữa. Sự minh mẫn mà anh tự hào trước mắt em lại như đứa trẻ, anh không giỏi đối xử với một người con gái thâm chí là yêu.
+        Vì thế mà đã gây nên cho em những tổn thương không đáng có. Anh biết rõ lỗi mình chứ, lại càng biết rõ hơn mình muốn gì mà. Nhưng cảm xúc rối bời đó lại làm anh hành động ngu ngốc như đứa trẻ vậy. Anh thật sự ghen khi em bên chàng trai khác, thực sự nhớ khi từng phút trôi qua. Em hỏi anh không bận hả, anh chỉ biết nói trả lời em luôn là nhiệm vụ ưu tiên.
+        Một khoảng thời gian sau chia tay đối với anh hoàn toàn trống rỗng và... khi anh thấy em đăng story bên người mới. Anh biết hắn, em đã từng nói. Anh đau lắm tự an ủi rằng không phải sự thật. Cả người anh run lên từng cơn nước mắt cứ lăn dài như vậy. Anh cứ như vậy xem đi xem lại đoạn story em đi trại cùng hắn, vừa xem vừa nấc lên.
+        Rồi cứ như thế trôi qua từng ngày, nỗi buồn cứ vơi đi từng chút, anh vực dậy bản thân. Anh cố gắng hơn không phải vì gì cả, chỉ vì muốn chứng tỏ, muốn nói với em rằng anh vẫn ổn. Nhưng chắc anh đã sai, anh chỉ mong cầu một tia cơ hội mong manh nào đó. Anh vẫn theo dõi em mỗi lần em cập nhật trạng thái. Xin lỗi anh vẫn chưa thể quên được. 
+        Em biết vì sao khi gặp mặt lại em anh luôn tỏ ra lạnh lùng không, dù con tim cứ gào lên không ngừng. Là anh không muốn em bận tâm về anh nữa hoặc đó chỉ là ảo tưởng của anh. Em mạnh mẽ hơn anh nghĩ rất nhiều, chắc sẽ không lưu luyến quá nhiều sau chia tay đâu. Và thực sự rằng mỗi lần gặp nhau ấy em vẫn ổn, vẫn rất ổn. Nhưng anh không ổn chút nào, những suy nghĩ cứ thôi thúc anh phải bận tâm về em. 
+        Anh ghét mình lắm và cũng biết em ghét điều này ở anh. Con người anh không mạnh mẽ như đã thể hiện bên ngoài đâu. Anh chỉ là một con người với nội tâm nhạy cảm thôi mà, đừng trách anh vì điều đó. 
+        Mọi thứ anh tưởng chừng như sẽ kết thúc theo thời gian. Anh đã dự định rằng mình sẽ xóa hết tất cả, từng dòng tin nhắn, từng bài post đã up khi xưa hết tất thảy vào đúng ngày mà anh gặp em. Em nhớ ngày đó chứ, nơi đã se duyên cho mình đó. Những ngày nay anh chìm trong hoài niệm nhưng không còn sầu não nữa. Anh vui vẻ đón nhận đó, tuy có chút buồn nhưng anh đã vượt qua được. 
+        Nhưng mà ... sao em lại một lần nữa xuất hiện mang đến cho anh một mùa xuân mới vậy ?. Tại sao ngay khi anh đã dần buông đi tất cả em lại xuất hiện với nụ cười ấy vậy. Nó đã sưởi ấm trái tim nguội lạnh của anh thêm lần nữa. Anh cố tỏ ra lạnh lùng né tránh em nhưng sao số phận cứ buộc lại vậy. Có lẽ còn chút duyên nợ chăng ? Anh đã nghĩ thế. Rồi anh một lần nữa lại dần mở lòng hơn mà chắc do anh đã tự mở cánh cửa ấy.
+        Em giỏi thật, giỏi chơi đùa trái tim anh thật. Khoảng thời gian đó mùa xuân trong anh thực sự như bùng nổ, như một đóa sen nở giữa đêm đen vậy. Xuân năm nay vui thật. Nhưng em biết lý do anh vẫn tỏ thái độ lạnh lùng đấy không, vì anh không biết rằng liệu em còn ở bên người ấy, liệu em có còn tình cảm nào không. Anh muốn hỏi. Nhưng lại thôi. Rồi anh nghĩ liệu anh còn cơ hội nào đó không. Anh bắt đầu thử bắt đầu hòa mình vào em hơn. 
+        Thú thật, anh rất muốn cảm ơn Thuận, nó là lý do để anh được gần em, được trở lại như những ngày đó. Nó vui lắm, chưa lúc nào mà anh vui như những ngày đó. Nhưng rồi anh lại nhận ra có lẽ niềm hứng thú duy nhất trong em chỉ là đưa Thuận đi chơi, chiều theo tâm ý nó. Không phải anh, anh nghĩ vậy, chắc do thấy sự lạnh nhạt từ sau lúc đó của em mà anh phán đoán vậy chăng. Mà quả thật là em đang trốn tránh anh. Xin lỗi em, xin lỗi vì đã làm phiền 
+        , xin lỗi vì những tơ tưởng đó, xin lỗi vì tất cả nhé. Nếu được quay lại anh lại muốn về lại ngày đi chơi đó, lúc cùng những người bạn của em. Anh muốn hòa đồng lắm, nhưng mà anh lại sợ. Anh không muốn cho người khác biết về bản thân mình, đặc biệt là bạn em người biết anh từng quen em. Vậy nên xin lỗi vì lúc đó đã lạnh lùng nhé. Thật ra cũng có một lý do nữa làm anh buồn lúc đó. 
+        Là khi Thuận nói với anh Đăng là "Bạch nguyệt quang" trong chùa của em. Anh cũng nghĩ vậy càng thấy tin hơn về cách em nói về nó. Đau lắm, nội tâm anh giằng xé và đau hơn khi em bảo rằng sẽ chừa lại 1 phần bánh tráng cho nó. Có lẽ trong em vẫn coi nó ở một mức độ ưu tiên hơn ít nhất với anh hiện tại chắc chắn hơn rồi. Anh nghĩ vậy.
+        Nỗi buồn cứ thế kéo dài thêm, rồi những ngày sau, dần dần em lạnh nhạt, rồi dứt hẳn. Khoảnh khắc đó anh biết rằng mình đã thua rồi. Thật sự khóc nữa rồi. Anh chưa từng lúc nào chờ những dòng tin nhắn em gửi. Cứ thế chờ mãi, thật dại khờ. Nếu anh cứ nhắn thêm, cứ liên tục thế thì em lại thêm chán ghét thôi. Ừ thôi kết thúc rồi. Lại một lần nữa đóng cửa trái tim thôi, những quyết tâm sẽ buông bỏ lại dấy lên trong anh. Những lý do mà anh ghê tởm rằng có lẽ em không tôn trọng anh vậy nên rời đi là đúng. Hoặc em vẫn còn giữ mối quan hệ với người cũ chẳng hạn. 
+        Anh không biết nữa chỉ biết nghĩ và chờ đợi. 1 ngày 2 ngày rồi 1 tuần. Rồi em lại đột nhiên nhắn lại, cánh cửa một lần nữa lại hé ra chút ánh sáng. Rồi lại lần nữa khép lại. Anh hiểu, do anh ảo tưởng, do anh ngu ngốc, do anh hết. Rồi cứ thế những ngày cứ buồn ngắn buồn dài, muốn nhắn rồi lại thôi. Có lẽ đây là lần cuối. Anh quyết tâm dứt bỏ đi thứ tình cảm này. Anh thực sự từng mơ về em rất nhiều, mơ về ngôi nhà và những hạnh phúc chỉ có cười suốt ngày. Giờ anh sẽ không mơ nữa. Cảm ơn em cho anh biết cảm giác yêu thực sự này, cảm ơn vì cho anh biết được những hạnh phúc mà anh chưa từng có trong đời. Cảm ơn em! Sau hôm nay anh sẽ buông bỏ hết. Vậy nên đừng lo nhé, anh hứa đây là lần rơi nước mắt cuối cùng thôi. Ừm chắc chắn là vậy, tạm biệt nhé... 
+    </div>
+
     <p style="color: #607d8b; font-weight: bold; margin-top: 15px;">🎁!</p>
 </div>
 
@@ -101,13 +137,14 @@
             "> Fetching_data.json",
             "> Status: [CONFIRMED]",
             "> Processing wish...",
-            "> Happy March 8th!",
-            "> Chúc bạn 8/3 xinh đẹp rạng rỡ, hoàn thành được các mục tiêu đặt ra và luôn giữ nụ cười trên môi nhé!",
+            "> Chào cậu!",
+            "> cho phép tôi gửi đôi lời từ trong lòng tôi bấy lâu nhé",
             "> Connection closed."
         ];
         let i = 0;
         const termContent = document.getElementById('terminal-content');
         const flower = document.getElementById('flower-img');
+        const message = document.getElementById('secret-message');
         
         function type() {
             if (i < lines.length) {
@@ -117,8 +154,13 @@
             } else {
                 // Khi chạy xong chữ thì hiện hoa lên
                 flower.style.display = "block";
-                // Mở rộng thẻ card để vừa ảnh
+                // Mở rộng thẻ card để vừa ảnh và chữ
                 document.querySelector('.card').style.width = "420px";
+                
+                // Đợi thêm 1.5 giây rồi mới hiện khung tâm thư lên cho bất ngờ
+                setTimeout(() => {
+                    message.style.display = "block";
+                }, 1500);
             }
         }
         type();
@@ -126,4 +168,3 @@
 </script>
 </body>
 </html>
-
